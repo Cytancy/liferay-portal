@@ -1,5 +1,12 @@
 .portlet-wiki {
 	.wiki-body {
+		 -moz-hyphens: auto;
+		 -webkit-hyphens: auto;
+		 hyphens: auto;
+		 word-break: break-all;
+		 word-break: break-word;
+		-ms-word-break: break-all;
+
 		ol ol {
 			list-style: decimal outside;
 		}
