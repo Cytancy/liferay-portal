@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-	<info organisation="org.osgi"
-		module="org.osgi.compendium"
-		revision="4.3.1"
+	<info organisation="org.codehaus"
+		module="codehaus-parent"
+		revision="3"
 		status="release"
-		publication="20121030024539"
+		publication="20100906054532"
 	>
-		<license name="
-        Apache License, Version 2.0
-      " url="
-        http://opensource.org/licenses/apache2.0.php
-      " />
-		<description homepage="
-    http://www.osgi.org
-  ">
-		OSGi Service Platform Release 4 Version 4.3, Compendium Interfaces
-     and Classes for use in compiling bundles.
+		<description homepage="http://codehaus.org/">
+		The Codehaus is a collaborative environment for building open source projects with a strong emphasis on modern languages, focussed on quality components that meet real world needs.
 		</description>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__codehausDistMgmtSnapshotsUrl>https://nexus.codehaus.org/content/repositories/snapshots/</m:properties__codehausDistMgmtSnapshotsUrl>
+		<m:maven.plugins>org.apache.maven.plugins__maven-enforcer-plugin__1.0-beta-1</m:maven.plugins>
 	</info>
 	<configurations>
 		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
@@ -31,8 +26,5 @@
 		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
 	</configurations>
 	<publications>
-		<artifact name="org.osgi.compendium" type="jar" ext="jar" conf="master"/>
-		<artifact name="org.osgi.compendium" type="source" ext="jar" conf="sources" m:classifier="sources"/>
-		<artifact name="org.osgi.compendium" type="javadoc" ext="jar" conf="javadoc" m:classifier="javadoc"/>
 	</publications>
 </ivy-module>
